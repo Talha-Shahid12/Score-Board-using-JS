@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="scoreboard">
+        <h1>Scoreboard</h1>
+        <meter id="scoreMeterA" value="0" min="0" max="100"></meter>
+        <div class="score">Team A Score: <span id="scoreValueA">0</span></div>
+        <button onclick="increaseScore(1)">Increase Score</button>
+        <br><br>
+        <meter id="scoreMeterB" value="0" min="0" max="100"></meter>
+        <div class="score">Team B Score: <span id="scoreValueB">0</span></div>
+        <button onclick="increaseScore(2)">Increase Score</button>
+        <br><br>
+        <button onclick="resetScore()">Reset Score</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
